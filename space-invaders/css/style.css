@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap'); /*Rubik Moonrocks*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&family=Rubik+Wet+Paint&display=swap'); /*Rubik Wet Paint*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@0;1&display=swap'); /*Space Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;900&family=Noto+Sans+KR&family=Syne+Mono&display=swap'); /*Noto Sans KR*/
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap'); /*Orbitron*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    background: url(../img/starry-sky-2675322.jpg);
+    background-size: contain;
+    background-repeat: repeat; /*Pra preencher toda a tela*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.board {
+    width: 90vh;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.637);
+    border: 7px groove rgb(1, 27, 56); /*bordas*/
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+}
+
+.navediv {
+    background: url("../img/nave.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ovnidiv{
+    background: url(../img/inimigo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.bulletdiv {
+    background: url("../img/bullet.png") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#pontuacao {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Orbitron;
+    color: rgb(255, 255, 255);
+    text-shadow: 6px 11px 8px rgb(29, 52, 155);
+}
+
+
+

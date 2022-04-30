@@ -1,0 +1,90 @@
+/* CSS for style linked to the Cronos project */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    background-color: rgba(118, 221, 240, 0.4);
+    user-select: none; /* Disabled text selections */
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.screen { /* white screen */
+    width: 700px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0 solid #000;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.screen .cronometro { /* first line */
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: #000;
+    font-size: 40px;
+}
+
+main.screen button { /* buttons */
+    width: 80px;
+    height: 50px;
+    font-family: Verdana;
+    color: rgba(118, 221, 240, 0.7);
+    background-color: rgba(240, 239, 239, 0.6);
+    font-size: 18px;
+    border: 0;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 1px 1px 4px #dddddd;
+}
+
+main.screen button:hover { /* button's efect */
+    transform: scale(1.10);
+    transition: 1s;
+    cursor: pointer;
+}
+
+main.screen h1 { /* marked line */
+    font-size: 36px;
+    font-family: Verdana;
+    margin-top: 40px;
+    color: rgb(255, 64, 64);
+}
+
+@media screen and (max-width: 700px){ /* responsive mobile css for screen < 700px */
+    body {background-color: #fff; overflow: hidden;}
+
+    .screen {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    body main.screen h1{
+        margin-top: 120px;
+        font-size: 22px;
+    }
+
+    .screen .cronometro {
+        margin-top: 180px;
+        margin-bottom: 100px;
+        font-size: 28px;
+    }
+
+    main.screen button {
+        transform: scale(0.70);
+        margin: 10px;
+    }
+}

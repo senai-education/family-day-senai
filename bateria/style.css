@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+margin: 20px;
+ margin-top: 20px;
+align-items: center;
+background-color: black;
+
+}
+
+.texto {
+font-size: 20px;
+font-weight: bold;
+font-family: 'Syne Mono', monospace;  
+color: white;
+top: 50%;
+left: 0%;
+text-align: center;
+}
+.bateria {
+display:flex;
+flex-direction: row;
+justify-content: center;
+
+
+}

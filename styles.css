@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Didact+Gothic&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #005baa;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 8px 32px;
+  width: 100%;
+}
+
+header img {
+  height: 96px;
+}
+
+header h1 {
+  font-family: 'Aldrich', sans-serif;
+}
+
+
+main {
+  margin: 32px auto;
+}
+
+
+main #students {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 64px;
+}
+
+main #teacher #conteudo {
+  display: flex;
+  margin: 32px auto;
+  max-width: 1024px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-row-gap: 64px;
+}
+
+#students a,
+#teacher #conteudo a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: #005caa;
+}
+
+#students a img,
+#teacher #conteudo a img {
+  width: 112px;
+}
+
+#students a span,
+#teacher #conteudo a span {
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#teacher {
+  width: 100%;
+  margin-top: 64px;
+  border-top: 4px solid #005caa;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!-- Author: João Rafael de S. Campoi
+Last update: 07/04/2022
+Title: Cronos - Cronômetro
+Description: Control the time with some functions: mark, pause, reset -->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="icon" href="clock.png">
+    <title>Cronos - Cronômetro</title>
+</head>
+<body>
+    <main class="screen">
+        <h1 id="1" class="cronometro"><span id="hora">0</span>h : <span id="min">0</span>m : <span id="seg">0</span>s : <span id="milis">0</span>ms</h1>
+        <div></div>
+        <button id="b1" onclick="reset()">Reset</button>
+        <button id="b2" onclick="start()">Start</button>
+        <button id="b3" onclick="pause()">Pause</button>
+        <button id="b4" onclick="mark()">Mark</button>
+        <h1 id="2"><span id="hora2">0</span>h : <span id="min2">0</span>m : <span id="seg2">0</span>s : <span id="milis2">0</span>ms</h1>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

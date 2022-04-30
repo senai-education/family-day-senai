@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="topo">
+				<h1>Lista de Tarefas</h1>
+				<div>
+					<div class="border1"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="instrucoes">
+				<p id="primeiraFrase">Insira texto no campo de entrada para adicionar itens à sua lista.</p>
+				<p id="segundaFrase">Clique no item para marcá-lo como atividade concluída.</p>
+				<p id="terceiraFrase">Clique no "X" para remover o item da sua lista.</p>
+			</div>
+		</div>
+
+		<div class="row" style="width: 100%">
+			<div class="dados">
+				<input id="userInput" type="text" placeholder="Nova Tarefa..." maxlength="27">
+				<button id="enter"><i class=""><img src="./img/pencil.png"></i></button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="itens">
+				<ul class="col-12 offset-0 col-sm-8 offset-sm-2" id="ul"></ul>
+			</div>
+		</div>
+
+	</div>
+
+    <script src="lista.js"></script>
+</body>

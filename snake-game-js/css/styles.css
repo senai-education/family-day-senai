@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.corpo {
+    background: url("../img/background.png");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#pontuacao {
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: fantasy;
+    color: #ffffff;
+}
+
+div#board {
+    width: 90vh;
+    height: 90vh;
+    background: linear-gradient(#5858e9, #587aeb);
+    border: 7px solid #000000;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+div.head {
+    background: linear-gradient(#f07c7c, #e4e481);
+    border: 2px solid #220422;
+    transform: scale(1.02);
+    border-radius: 15px;
+}
+
+div.snake {
+    background: #66cdaa;
+    border: 1px solid white;
+    transform: scale(1.02);
+    border-radius: 15px;
+}
+
+div.fruta {
+    background: url("../img/fruta.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}

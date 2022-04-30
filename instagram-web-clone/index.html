@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instagram | Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="../assets/instagram-clone.png" type="image/x-icon">
+</head>
+
+<body onload="carregarInformacoes()">
+  <nav class="navbar">
+    <div class="nav-wrapper">
+      <img src="./img/logo.PNG" class="brand-img" alt="logo-instagram" />
+      <input type="text" class="search-box" placeholder="Search" />
+      <div class="nav-items">
+        <img src="./img/home.PNG" alt="home-icon" class="icon" />
+        <img src="./img/messenger.PNG" alt="messenger-icon" class="icon" />
+        <img src="./img/explore.PNG" alt="explore-icon" class="icon" />
+        <img src="./img/like.PNG" alt="like-icon" class="icon" />
+        <img src="https://avatars.githubusercontent.com/u/22873208?v=4" alt="like-icon" class="icon user-profile" />
+        <!-- <div class="icon user-profile"></div> -->
+      </div>
+    </div>
+  </nav>
+  <section class="main">
+    <div class="wrapper">
+      <div class="letf-col" id="coluna-esquerda">
+        <div class="status-wrapper" id="stories"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="buscardados.js"></script>
+</body>
+
+</html>

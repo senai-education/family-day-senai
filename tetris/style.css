@@ -1,0 +1,109 @@
+.container {
+  display: flex;
+}
+body {
+  background: url(./hatsu.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(100%, 79.61%, 85.88%, 60%);
+  border: 7px double;
+  box-shadow: 1px 1px 3px rgb(0, 0, 0);
+  
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+  
+}
+
+
+
+.mini-grid {
+  margin-left: 50px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(100%, 79.61%, 85.88%, 60%);
+  border: 7px double;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+button#start-button {
+  box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	background:linear-gradient(to bottom, #dfbdfa 5%, #bc80ea 100%);
+	background-color:#dfbdfa;
+	border-radius:6px;
+	border:1px solid #c584f3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #9752cc;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+  
+}
+
+button#start-button:hover {
+  background:linear-gradient(to bottom, #bc80ea 5%, #dfbdfa 100%);
+  background-color:#bc80ea;
+}
+span#score {
+
+  font-family: fantasy;
+  position: absolute;
+  top: 400px;
+  left: 600px;
+  font-size: 39px;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 453px;
+  left: 510px;
+}
+div#pontuacao {
+  font-family: fantasy;
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  font-size: 39px;
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 450px;
+  left: 320px;
+}
+
+#bordaPontuacao{
+  width: 250px;
+  height: 50px;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 7px double rgba(100%, 79.61%, 85.88%, 60%);
+  box-shadow: 1px 1px 3px rgba(100%, 79.61%, 85.88%, 60%);
+  position: absolute;
+  top: 445px;
+  left: 300px
+}
